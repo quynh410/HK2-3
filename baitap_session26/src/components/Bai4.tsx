@@ -1,15 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-
-const ColorBox  = () => {
-    const color = 'red'; 'blue'; 'green'; 
-    return (
-        <div style={{
-            width:'200px',
-            height:'200px',
-            backgroundColor: color,
-        }}>
-        </div>
-    );
-};
-export default ColorBox;
+export default function Bai4() {
+  return (
+    <div className='row'>
+        <div className='box'>Box</div>
+        <div className='box1'>Box</div>
+        <div className='box2'>Box</div>
+    </div>
+  )
+}
