@@ -1,0 +1,22 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: white;
+}
+.all{
+  display: flex;
+  text-align: center;
+  margin-left: 35pc;
+  color: black;
+}
+table, th, td{
+  border:1px solid black;
+}
+table{
+  border-collapse:collapse;
+  width: 800px;
+  height: 200px;
+}

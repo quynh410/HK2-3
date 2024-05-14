@@ -1,0 +1,38 @@
+
+.header {
+  width: 800px;
+  height: 45px;
+  background-color: dimgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu {
+  width: 200px;
+  height: 550px;
+  background-color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.main {
+  width: 550px;
+  height: 500px;
+  border:  25px solid rgb(225, 220, 220);
+  margin-left: 200px;
+  margin-top: -550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  width: 550px;
+  height: 35px;
+  background-color: dimgray;
+  margin-left: 225px;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

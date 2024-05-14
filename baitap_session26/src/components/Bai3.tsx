@@ -1,8 +1,14 @@
 import React from 'react';
-
+interface User {
+  name: string;
+  gender: string;
+  date: string;
+  email: string;
+  address: string;
+}
 class PersonalInfo extends React.Component {
   render() {
-    const user = {
+    const user:User = {
       name: "Nguyễn Văn A",
       gender:"Nam",
       date:"06/03/2034",
