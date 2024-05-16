@@ -95,7 +95,8 @@ export default function App() {
       <Bai6Cha products3={products1}/>
       <Bai7Cha posts={posts}/>
       <Bai8Cha  product={product}/>
-      <Bai9/>
+      <Bai9/>      
+
     </div>
   )
 }
