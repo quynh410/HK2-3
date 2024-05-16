@@ -9,8 +9,10 @@ export default function Bai7() {
       const updatedNumbers = [...numbers, newNumber];
       setNumbers(updatedNumbers);
       setDisplayNumbers(updatedNumbers.join(', '));
+      // khi muốn load lại components  thì đi xét state lại cho nó 
+       // bắt buộc cái state phải khác state ban dầu
     };
-  
+
     return (
       <div>
         <h1>Bài 7</h1>

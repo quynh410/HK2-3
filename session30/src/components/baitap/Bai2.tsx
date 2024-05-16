@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 
 export default function Bai2() {
-    const [input,setInput]= useState('');
-    const handleChangeInput = (event: any) => {
+    const [input,setInput]= useState<string>('');
+    const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
         setInput(event.target.value);
-        console.log(input);
     }
   return (
     <div>

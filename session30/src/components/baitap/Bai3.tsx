@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function Bai3() {
-    const [date, setDate] = useState('');
+    const [date, setDate] = useState<string>('');
 
     const handleDateChange = (event:any) => {
         setDate(event.target.value);

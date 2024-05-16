@@ -19,7 +19,7 @@ export default function Bai4() {
         setSelectedCity(event.target.value);
         console.log(event.target.value);
       };
-    
+      
       return (
         <div>
             <h1>Bài 4</h1>
@@ -27,7 +27,6 @@ export default function Bai4() {
                 {selectedCity && <h3>Tỉnh/thành phố: {selectedCity}</h3>}
             </div>
           <select value={selectedCity} onChange={handleSelectChange}>
-
             <option value="">Chọn tỉnh/thành phố</option>
             {city.map((city, index) => (
               <option key={index} value={city}>
