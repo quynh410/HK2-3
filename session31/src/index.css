@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .active {
+    background-color: #333;
+    color: #fff;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .modal-container {
+    background-color: #fff;
+    padding: 20px 24px;
+    border-radius: 4px;
+    width: 400px;
+  }
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .modal-main {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .modal-icon{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+  }
+  .modal-footer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  .button {
+    height: 36px;
+    min-width: 80px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+  }
+  .button-secondary {
+    border-color: black;
+  }
+  .button-danger {
+    background-color: red;
+    color: #fff;
+  }
+  .importan {
+    width: 850px;
+    height: 600px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 70px;
+  }
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .label-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icons {
+    display: flex;
+  }
+  
+  .icons i {
+    margin-left: 10px; /* Adjust the value as needed */
+  }
+  .btn {
+    background-color: cornflowerblue;
+    color: #fff;
+  }
+  .input-group{
+    margin-top: 80px;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 600;
+    margin-top: 30px;
+  }
+  .list-group{
+    margin-top: 50px;
+  }
+  .input-group-text{
+    width: 100%;
+  }
