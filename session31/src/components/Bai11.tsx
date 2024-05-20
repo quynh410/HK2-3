@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { CloseOutlined } from "@ant-design/icons";
+// import { CloseOutlined } from "@ant-design/icons";
 type Props = {
   title: string;
   content: string;
@@ -18,7 +18,7 @@ export default class Bai11 extends Component<Props, State> {
         <div className="modal-container">
           <header className="modal-header">
             <h3 className="modal-header-title">{this.props.title}</h3>
-            <CloseOutlined onClick={this.props.close}/>
+            {/* <CloseOutlined onClick={this.props.close}/> */}
           </header>
           <main className="modal-main">
             <img

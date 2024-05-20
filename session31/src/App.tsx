@@ -107,7 +107,6 @@ export default class App extends Component<Props, State> {
   handleClick = (deleteJobId: number) => {
     this.setState({ show: true, deleteJobId});
   };
-  // hàm đóng modal
   handleCloseModal = () => {
     this.setState({
       show: false,
@@ -159,6 +158,9 @@ export default class App extends Component<Props, State> {
     this.setState({ jobs: updatedJobs });
     localStorage.setItem("jobs", JSON.stringify(updatedJobs));
   };
+  handleEditJob=()=> {
+
+  }
   render() {
     const {jobs} = this.state
     return (
@@ -184,7 +186,7 @@ export default class App extends Component<Props, State> {
                       <input className="form-check-input me-1" type="checkbox" value="" checked={job.status} onChange={() => this.handleToggleJobStatus(job.id)}/>
                       <span style={{textDecoration: job.status ? "line-through" : "none"}}>{job.name}</span>
                     </div>
-                      <div className="icons" onClick={() => this.handleEditJob(job)} style={{cursor: 'pointer'}}>
+                      <div className="icons" onClick={() => this.handleEditJob()} style={{cursor: 'pointer'}}>
                         <i className="fa-solid fa-pen"></i>
                         <i className="fa-solid fa-trash" onClick={() => this.handleClick(job.id)} style={{cursor: 'pointer'}}></i>
                     </div>
