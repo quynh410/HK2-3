@@ -10,7 +10,7 @@ export default function Bai2() {
   
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      setHexColor(`${color.slice(1)}`);
+      setHexColor(`#${color.slice(1)}`);
     };
   
     return (
