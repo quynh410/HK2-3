@@ -5,14 +5,14 @@ export default function Bai3() {
 
     const handleChangeColor = () => {
       setColor(ChangeColor => 
-        (ChangeColor === 'black' ? 'red' : 'black')
+        (ChangeColor === 'black' ? 'red' : 'black' )
     );
 };
   
     return (
       <div>
         <h1>Bài 3</h1>
-        <p style={{ color }}>Tiêu đề văn bản</p>
+        <b style={{ color }}>Tiêu đề văn bản</b> <br />
         <button onClick={handleChangeColor}>Thay đổi màu</button>
       </div>
     );

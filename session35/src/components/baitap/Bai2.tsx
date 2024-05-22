@@ -6,7 +6,7 @@ interface Products{
     quantity:number;
 }
 export default function Bai2() {
-    const [product,SetProduct]= useState<Products>({
+    const [product,setProduct]= useState<Products>({
         id:1,
         name:'Cocca Cola',
         price:"1000 $",
