@@ -5,6 +5,7 @@ import React from 'react'
 import Register from './components/register/Register'
 import Admin from './components/register/Admin'
 
+
 export default function App() {
   return (
     <div>

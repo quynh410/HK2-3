@@ -1,6 +1,11 @@
+import { useState } from "react";
+
 export default function Register() {
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+
+
   return (
-    <>
     <div className="border-solid border-2 border-gray-700 w-[850px] flex gap-[20px] mt-[20px] rounded font-mono ml-[100px]">
       <div>
         <img
@@ -9,27 +14,30 @@ export default function Register() {
           className="w-[400px] h-[500px]"
         />
       </div>
-      <div className="">
+      <div>
         <h2 className="font-extrabold uppercase text-[30px] mr-[60px]">
-          Login
+          Register
         </h2>
-        <label htmlFor="">E-Mail</label> <br />
+        <label htmlFor="email">E-Mail</label> <br />
         <input
           className="border-2 border-zinc-600 rounded-[5px] w-[25pc] h-[40px]"
-          type="text"
-          placeholder="Placeholder conten"
+          type="email"
+          placeholder="Enter your email"
+          value={email}
         />{" "}
         <br /> <br />
-        <label htmlFor="">Password</label> <br />
+        <label htmlFor="password">Password</label> <br />
         <input
-          className="border-2 border-zinc-600 rounded-[5px]  w-[25pc] h-[40px]"
-          type="text"
-          placeholder="Placeholder conten"
+          className="border-2 border-zinc-600 rounded-[5px] w-[25pc] h-[40px]"
+          type="password"
+          placeholder="Enter your password"
+          value={password}
         />{" "}
         <br /> <br />
-        <b className="ml-[17pc]">Forgot password?</b> <br /> <br />
-        <button className="bg-blue-600 border-none border-zinc-600 rounded text-white w-[400px] h-[40px]">
-          Login{" "}
+        <button
+          className="bg-blue-600 border-none border-zinc-600 rounded text-white w-[400px] h-[40px]"
+        >
+          Register
         </button>
         <div className="flex items-center justify-center my-8">
           <hr className="flex-grow border-t border-gray-400" />
@@ -37,10 +45,9 @@ export default function Register() {
           <hr className="flex-grow border-t border-gray-400" />
         </div>
         <button className="bg-white border-2 border-gray-800 w-[400px] h-[40px] rounded text-center text-gray-500 ">
-          Register now
+          Login
         </button>
       </div>
     </div>
-    </>
   );
 }
