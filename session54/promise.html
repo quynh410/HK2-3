@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // setTimeout(()=>{
+        //     console.log(11111);
+        //     setTimeout(() => {
+        //         console.log(22222);
+        //         setTimeout(() => {
+        //             console.log(33333);
+        //         }, 1000);
+        //     }, 1000);
+        // },1000)
+        let promise = new Promise((resolve,reject)=>{
+            // viết logic xử lý code nếu thành công thì gọi resolve , nếu thất bại thì gọi reject
+            // những tác vụ gọi sever , tương tác database
+            resolve([1,2,3]);
+        })
+        // khi khởi tạo 1 promise thì nó đang ở  đang ở trạng thái pending ( chờ xử lý)
+        // console.log('promise', promise);
+        promise
+        .then(()=>{
+            console.log('khi thành công trả về dữ liệu');
+        })
+        .catch(()=>{
+            console.log('khi thất bại trả về dữ liệu ');
+        });
+
+
+
+
+        let newPromise =  new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                console.log(111);
+                resolve();
+            }, 1000);
+        })
+        newPromise
+        .then((data1)=>{
+            return new Promise((resolve,reject)=>{
+                setTimeout(() => {
+                    console.log(222);
+                    resolve();
+                }, 1000);
+            })
+        })
+        .then(()=>{
+            return new Promise((resolve,reject)=>{
+                setTimeout(() => {
+                    console.log(333);
+                    resolve();
+                }, 1000);
+            })
+        })
+        .catch(()=>{
+            console.log('khi thất bại trả về dữ liệu ');
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [1, 2, 3, 4, 5, 6];
+      function myForEach(arr, callback) {
+        for (let i = 0; i < arr.length; i++) {
+          callback(arr[i], i, arr);
+        }
+      } 
+
+      myForEach(arr, function (element, index, array) {
+        console.log(`vị trí: ${element}, phần tử: ${index}, mảng: [${array}]`);
+      });
+    </script>
+  </body>
+</html>

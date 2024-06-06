@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let array = [1, 2, 3, 4, 5];
+      function myFindIndex(arr, value, callback) {
+        for (let index = 0; index < arr.length; index++) {
+          if (callback(arr[index], value)) {
+            return index;
+          }
+        }
+        return -1;
+        function callback(element, value) {
+          return element === value;
+        }
+        let valueToFind = 30;
+        let indexFound = myFindIndex(array, valueToFind, callback);
+
+        console.log("Index:", indexFound);
+      }
+    </script>
+  </body>
+</html>

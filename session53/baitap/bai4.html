@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function displayNumbers(callback, delay) {
+        let number = 1;
+        let intervalId = setInterval(() => {
+          callback(number);
+          number++;
+        }, delay);
+        let stopDisplaying = () => clearInterval(intervalId);
+        return stopDisplaying;
+      }
+      function printNumber(number) {
+        console.log(number);
+      }
+      let stopDisplaying = displayNumbers(printNumber, 1000);
+      setTimeout(stopDisplaying, 5000);
+
+    </script>
+  </body>
+</html>

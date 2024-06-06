@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // console.log("Công việc 1");
+      // setTimeout(() => {
+      //     console.log('Công việc 2 ');
+      // }, 0);
+      // console.log('Công việc 3');
+
+      // function task1(callback) {
+      //     // cần tgian xử lý cvc 1
+      //     // vd cvc 1 cần 2s để thực thi
+      //     setTimeout(() => {
+      //         console.log('công việc 1 được thực hiện');
+      //         callback(); // thực thi công việc 2
+      //     }, 2000);
+      // }
+      // function task2() {
+      //     // cần tgian xử lý cvc 2
+      //     // vd cvc 2 cần 1s để thực thi
+      //         console.log('Được thực thi sau khi task 1 hoàn thành ');
+
+      // }
+      // task1(task2);
+
+      setTimeout(() => {
+        console.log("công việc 1 thực thi ");
+        setTimeout(() => {
+          console.log("công việc2 thực thi sau khi công việc 1 hoàn thành");
+          setTimeout(() => {
+            console.log(
+              "công việc thứ 3 hoàn thành sau khi công việc 2 hoàn thành "
+            );
+          }, 7000);
+        }, 3000);
+      }, 1000);
+      // khi viết nhiều callBack lồng nhau thì sẽ rơi vào tình trạng callBack hell (Địa ngục)
+
+      let arr = [1, 2, 3, 4, 5];
+      // tất cả phần  tử nhân đôi
+      // let result= arr.map((item)=>{
+      //         return item * 2
+      //     })
+      // dùng callback
+      // custom lại hàm map
+
+    //   function mymap(a, b) {
+    //     let result = [];
+    //     for (const item of arr) {
+    //       reslut.push(b(item));
+    //     }
+    //     return result;
+    //   }
+    //   myMap(arr, (item) => item * 2);
+
+      // dùng callBack viết lại hàm filter
+    //   let result1 = arr.filter((item) => item > 5);
+    //   console.log(result1);
+
+      function myFilter(a, b) {
+        let result1 = [];
+        for (const item of arr) {
+            if (b(item)){
+                result1.push((item));
+            }
+        }
+        return result1;
+      }
+      console.log(myFilter(arr, (item) => item > 3));
+
+    </script>
+  </body>
+</html>
