@@ -5,10 +5,12 @@
 // import Update from './components/Update'
 // import Find from './components/Find'
 
-import Bai2 from "./components/baitap/Bai2";
-import Bai3 from "./components/baitap/Bai3";
-import Bai4 from "./components/baitap/Bai4";
-import Bai5 from "./components/baitap/Bai5";
+// import Bai2 from "./components/baitap/Bai2";
+// import Bai3 from "./components/baitap/Bai3";
+// import Bai4 from "./components/baitap/Bai4";
+// import Bai5 from "./components/baitap/Bai5";
+// import Bai6 from "./components/baitap/Bai6";
+import Bai7 from "./components/baitap/Bai7";
 
 
 export default function App() {
@@ -20,10 +22,12 @@ export default function App() {
       <Update></Update> 
       <Find></Find> */}
       <div>
-        <Bai2></Bai2>
+        {/* <Bai2></Bai2>
         <Bai3></Bai3>
         <Bai4></Bai4>
         <Bai5></Bai5>
+        <Bai6></Bai6> */}
+        <Bai7></Bai7>
       </div>
     </>
   )

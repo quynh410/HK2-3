@@ -1,48 +1,29 @@
 {
-  "students": [
-    {
-      "id": 1,
-      "student_name": "Huong",
-      "email": "huong@gmail.com",
-      "address": "Hn",
-      "phone": "0987654",
-      "status": "active",
-      "created_at": "2024-07-06",
-      "age":12
-      
-    },
-    {
-      "id": 3,
-      "student_name": "Nguyen",
-      "email": "nguyen@gmail.com",
-      "address": "Da Nang",
-      "phone": "2346547",
-      "status": "active",
-      "created_at": "2024-08-30",
-      "age":15
+  "users":[
+      {
+          "id":1,
+          "name":"Huong",
+          "email":"huong@gmail.com",
+          "address":"HN",
+          "phone":"234567876",
+          "status":false
+      },
+      {
+        "id":2,
+        "name":"Binh",
+        "email":"binh@gmail.com",
+        "address":"HCM",
+        "phone":"5676787678",
+        "status":false
 
-    },
-    {
-      "student_name": "hoa",
-      "email": "hoa@gmail.com",
-      "address": "HN",
-      "phone": "0987656",
-      "status": true,
-      "created_at": "2021-03-06",
-      "id": 4,
-      "age":23
-
-    },
-    {
-      "student_name": "hoa",
-      "email": "hoa@gmail.com",
-      "address": "HN",
-      "phone": "0987656",
-      "status": true,
-      "created_at": "2021-03-06",
-      "id": 5,
-      "age":27
-
-    }
+      },
+      {
+        "id":3,
+        "name":"Tien",
+        "email":"tien@gmail.com",
+        "address":"HG",
+        "phone":"478876543",
+        "status":true
+      }
   ]
 }

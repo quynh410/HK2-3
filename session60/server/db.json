@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Huyền",
+      "age": 18
+    },
+    {
+      "id": 2,
+      "name": "Phương Anh",
+      "age": 18
+    }
+  ],
+  "jobs": [
+    {
+      "name": "Sửa bài",
+      "id": 1
+    },
+    {
+      "name": "Lau nhà",
+      "status": false,
+      "id": 2
+    }
+  ]
+}

@@ -11,7 +11,7 @@ interface Student {
     created_at: string;
 }
 
-export default function Bai5() {
+export default function Bai6() {
     useEffect(() => {
         const updateStudentById = (id: number, updatedStudent: Partial<Omit<Student, 'id' | 'created_at'>>) => {
             axios.put(`http://localhost:8080/students/${id}`, updatedStudent)
