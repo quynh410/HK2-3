@@ -11,15 +11,5 @@
       "age": 18
     }
   ],
-  "jobs": [
-    {
-      "name": "Sửa bài",
-      "id": 1
-    },
-    {
-      "name": "Lau nhà",
-      "status": false,
-      "id": 2
-    }
-  ]
+  "jobs": []
 }
