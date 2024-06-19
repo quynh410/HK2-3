@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "title": "Tiêu đề 2",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60p7T44uwQN0ZlnMrXtMEDoLMhbd4EVBjZg&usqp=CAU",
+      "date": "2024-06-15",
+      "status": true,
+      "id": 4
+    },
+    {
+      "title": "Tiêu đề 3",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60p7T44uwQN0ZlnMrXtMEDoLMhbd4EVBjZg&usqp=CAU",
+      "date": "2022-06-19",
+      "status": true,
+      "id": 5
+    },
+    {
+      "title": "Tiêu đề 4",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60p7T44uwQN0ZlnMrXtMEDoLMhbd4EVBjZg&usqp=CAU",
+      "date": "2020-07-19",
+      "status": false,
+      "id": 6
+    },
+    {
+      "title": "Tiêu đề 1 ",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60p7T44uwQN0ZlnMrXtMEDoLMhbd4EVBjZg&usqp=CAU",
+      "date": "2024-06-08",
+      "status": true,
+      "id": 7
+    },
+    {
+      "title": "Tiêu đề 5",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60p7T44uwQN0ZlnMrXtMEDoLMhbd4EVBjZg&usqp=CAU",
+      "date": "2024-06-07",
+      "status": false,
+      "id": 8
+    }
+  ]
+}
