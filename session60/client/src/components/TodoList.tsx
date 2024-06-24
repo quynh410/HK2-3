@@ -195,34 +195,34 @@ export default function TodoList() {
             </div>
             {/* --------------------------------------------------------- */}
             {/* ------------------------công việc--------------------------------- */}
-            <ul className="job-list p-2 w-[470px]">
-              {filteredJobs().map((job) => (
-                <li
-                  key={job.id}
-                  className="flex justify-between items-center mb-2 border-2 border-gray-300 p-2 rounded-lg shadow-md"
-                >
-                  <div className="flex items-center">
-                    <input
-                      type="checkbox"
-                      className="mr-2 rounded-lg"
-                      checked={job.completed}
-                      onChange={() => toggleCompletion(job.id)}
-                    />
-                    <span style={{ textDecoration: job.completed ? "line-through" : "none" }}>
-                      {job.name}
-                    </span>
-                  </div>
-                  <div className="flex gap-[15px]">
-                    <button onClick={() => startEditing(job)}>
-                      <i className="fa-solid fa-pen text-yellow-400"></i>
-                    </button>
-                    <button onClick={() => deleteJob(job.id)}>
-                      <i className="fa-solid fa-trash text-red-500"></i>
-                    </button>
-                  </div>
-                </li>
-              ))}
-            </ul>
+              <ul className="job-list p-2 w-[470px]">
+                {filteredJobs().map((job) => (
+                  <li
+                    key={job.id}
+                    className="flex justify-between items-center mb-2 border-2 border-gray-300 p-2 rounded-lg shadow-md"
+                  >
+                    <div className="flex items-center">
+                      <input
+                        type="checkbox"
+                        className="mr-2 rounded-lg"
+                        checked={job.completed}
+                        onChange={() => toggleCompletion(job.id)}
+                      />
+                      <span style={{ textDecoration: job.completed ? "line-through" : "none" }}>
+                        {job.name}
+                      </span>
+                    </div>
+                    <div className="flex gap-[15px]">
+                      <button onClick={() => startEditing(job)}>
+                        <i className="fa-solid fa-pen text-yellow-400"></i>
+                      </button>
+                      <button onClick={() => deleteJob(job.id)}>
+                        <i className="fa-solid fa-trash text-red-500"></i>
+                      </button>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             {/* --------------------------------------------------------- */}
             {/* -------------------------xóa công việc-------------------------------- */}
             <div className="p-4 flex justify-around w-[550px]">
