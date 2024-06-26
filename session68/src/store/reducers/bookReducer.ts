@@ -56,7 +56,7 @@ const bookReducer = (state = initialBook, action: any) => {
                 state[index].status = !state[index].status;
             }
             return [...state];
-
+            
         default:
             return state;
     }
