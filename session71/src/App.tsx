@@ -1,6 +1,9 @@
 import React from 'react'
 import Count from './components/Count'
 import TodoList from './components/TodoList'
+import ListNumber from './components/ListNumber'
+import Theme from './components/Theme'
+import ViewMod from './components/ViewMod'
 
 export default function App() {
     {/* 
@@ -22,6 +25,9 @@ export default function App() {
     <>
       <Count></Count>
       <TodoList></TodoList>
+      <ListNumber></ListNumber>
+      <Theme></Theme>
+      <ViewMod></ViewMod>
     </>
   )
 }

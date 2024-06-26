@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { increase } from '../store/reducer/countReducer';
 import { decrease } from '../store/reducer/countReducer';
+import { reset } from '../store/reducer/countReducer'
 export default function Count() {
     // thực hienej hành động useDispatch
     const data:any = useSelector(state => state)
@@ -13,12 +14,16 @@ export default function Count() {
     const handleDecrease = () => {
         dispatch(decrease());
     }
+    const handleReset = ()=>{
+      dispatch(reset());
+    }
     
   return (
     <div>
       <p>Giá trị biến count : {data.countReducer.count}</p>
       <button onClick={handleIncrease}>+</button>___
-      <button onClick={handleDecrease}>-</button>
+      <button onClick={handleDecrease}>-</button>___
+      <button onClick={handleReset}>reset</button>
     </div>
   )
 }
