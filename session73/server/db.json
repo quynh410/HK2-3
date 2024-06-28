@@ -1,0 +1,30 @@
+{
+  "articles": [
+    {
+      "title": "Tiêu đề bài viết 1",
+      "thumbnail": "https://lotusacademy.edu.vn/api/media/download/515/B%C3%A0i%2018%20-%20%E1%BA%A3nh%201.png",
+      "content": "Nội dung bài viết 1",
+      "updatedAt": "12-4-2024",
+      "status": true,
+      "id": 1
+    },
+    {
+      "title": "Tiêu đề bài viết 2",
+      "thumbnail": "https://lotusacademy.edu.vn/api/media/download/515/B%C3%A0i%2018%20-%20%E1%BA%A3nh%201.png",
+      "content": "Nội dung bài viết 2",
+      "updatedAt": "15-9-2025",
+      "status": true,
+      "id": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Tên danh mục 1"
+    },
+    {
+      "id": 2,
+      "name": "Tên danh mục 2"
+    }
+  ]
+}
