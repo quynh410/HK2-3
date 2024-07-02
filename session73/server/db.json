@@ -13,8 +13,33 @@
       "thumbnail": "https://lotusacademy.edu.vn/api/media/download/515/B%C3%A0i%2018%20-%20%E1%BA%A3nh%201.png",
       "content": "Nội dung bài viết 2",
       "updatedAt": "15-9-2025",
-      "status": true,
+      "status": false,
       "id": 2
+    },
+    {
+      "title": "vite",
+      "thumbnail": "https://uploads.sitepoint.com/wp-content/uploads/2021/04/1618197067vitejs.png",
+      "content": "code",
+      "updatedAt": "2024-06-18",
+      "category": "https://uploads.sitepoint.com/wp-content/uploads/2021/04/1618197067vitejs.png",
+      "status": true,
+      "id": 5
+    },
+    {
+      "title": "vite2",
+      "thumbnail": "https://uploads.sitepoint.com/wp-content/uploads/2021/04/1618197067vitejs.png",
+      "content": "code",
+      "updatedAt": "2024-06-05",
+      "status": false,
+      "id": 6
+    },
+    {
+      "title": "vite",
+      "thumbnail": "dfgfe",
+      "content": "ềw",
+      "updatedAt": "2024-06-22",
+      "status": "published",
+      "id": 7
     }
   ],
   "categories": [

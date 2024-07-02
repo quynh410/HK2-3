@@ -34,6 +34,13 @@ export default function ArticleManagement() {
           </Link>
         </div>
         <hr className="my-4" />
+        <div className="flex gap-[20px] ml-[60.6pc]">
+          <select name="" id="" className="h-[25px] rounded border border-gray-500">
+          <option value="">Sắp xếp theo tên</option>
+        </select>
+        <input type="text" className="border border-gray-500 rounded w-[350px]" placeholder="Tìm kiếm bài viết theo tên"/>
+        </div>
+        <br />
         <div className="overflow-x-auto text-center">
           <table className="min-w-full bg-white border border-gray-200">
             <thead>
