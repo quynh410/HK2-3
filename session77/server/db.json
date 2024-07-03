@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "name": "kjhgc",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/quynh-cec5c.appspot.com/o/products%2F%E1%BA%A2nh%20ch%E1%BB%A5p%20m%C3%A0n%20h%C3%ACnh%202024-06-30%20222358.png?alt=media&token=1d18c3d1-a397-4b46-ae41-4fb03bac86fe",
+      "id": 1
+    },
+    {
+      "name": "hhhh",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/quynh-cec5c.appspot.com/o/products%2F%E1%BA%A2nh%20ch%E1%BB%A5p%20m%C3%A0n%20h%C3%ACnh%202024-06-27%20110747.png?alt=media&token=bcbbef16-0f77-4178-9258-2bc313353589",
+      "id": 2
+    },
+    {
+      "name": "hhhh",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/quynh-cec5c.appspot.com/o/products%2F%E1%BA%A2nh%20ch%E1%BB%A5p%20m%C3%A0n%20h%C3%ACnh%202024-06-27%20110747.png?alt=media&token=d4bcf087-5fe7-499b-9dd4-1b696f7b0e93",
+      "id": 3
+    }
+  ]
+}
